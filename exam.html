@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/exam.css">
+    
+</head>
+
+<body>
+    <div id="exam-container">
+    
+        
+        <div id="question-container">
+            <div id="inside">
+                <div id="timeProgress"></div>
+            </div>
+            
+            <div id="examQuestions">
+                <div id="question"></div>
+                <button onclick="exam.markQuestion()" id="markButton">Mark</button>
+
+                <div id="answers"></div>
+            </div>
+            
+            <div id="controls">
+                <button onclick="exam.prevQuestion()" id="prevButton">Previous</button>
+
+                <div id="questionNumber">
+                    <span id="currentQuestion">1</span> of
+                    <span id="totalQuestions">5</span>
+                </div>
+    
+                <button onclick="exam.nextQuestion()" id="nextButton">Next</button>
+               
+                
+            </div>
+        
+            <button onclick="exam.submitExam()" id="submitButton">Submit</button>
+        </div>
+        
+        <aside id="markedQuestions">
+            <h3>Marked Questions</h3>
+            <ul id="markedQuestionsList"></ul>
+        </aside>
+    </div>
+    <script src="js/exam.js"></script>
+</body>
+
+</html>

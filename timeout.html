@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex; 
+            justify-content: space-evenly; 
+            align-items: center;
+        }
+        img {
+            display: block;
+            position: relative;
+            animation: clock;
+            animation-duration: 1s;
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 100px;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 70px;
+            color: red;
+            margin-bottom: 30px;
+        }
+
+        div {
+           text-align: center;
+        }
+
+        @keyframes clock {
+            0% {
+                left: -200px;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="imgs/Deadline (1).gif" alt=""> -->
+    <img src="imgs/alarm-clock.png" alt="">
+    <div>
+        <h3 id="user"></h3>
+        <h1>Time's out!</h1>
+    </div>
+    
+    <script>
+        let currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        let user = document.getElementById('user');
+        user.innerHTML = `${currentUser.fname} ${currentUser.lname}`;
+    </script>
+</body>
+</html>
