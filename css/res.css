@@ -1,0 +1,86 @@
+#res-heading , #res-heading2{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 1em 0 2em;
+}
+
+
+#res-container {
+    width: 40%;
+    margin: auto;
+    border: 1px solid #ddd;
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 2px 2px 5px #ddd;
+    font-weight: bold;
+}
+
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#res-img {
+    width: 250px;
+    margin: auto;
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    border-radius: 50%;
+    
+}
+
+
+#res-img .img1 {
+    display: none;
+}
+
+#res-img .img2 {
+    display: none;
+} 
+
+#res-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#user {
+    margin: 3em 0 .5em;
+    text-align: center;
+    font-size: 3em;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.heading td{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.correct, .total {
+    color: green
+}
+
+.wrong {
+    color: red;
+}
+
+

@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #FBF7FF;
+}
+
+#exam-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 5px;
+}
+
+#markedQuestions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f4f4f4;
+    width: 25%;
+    height: 100%;
+}
+
+#markedQuestions h3 {
+    font-size: 1.5em;
+    background-color: #2d2f7a;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#markedQuestionsList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ddd;
+    position: relative;
+    cursor: pointer;
+}
+
+#markedQuestionsList li .deleteButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 6px;
+    cursor: pointer; 
+}
+
+#inside {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    height: 15px;
+    width: 100%;
+}
+
+#timeProgress {
+    background-color: #3f42d9;
+    border-radius: 20px;
+    height: 15px;
+}
+
+#question-container {
+    position: absolute;
+    top: 50%;
+    background-color: red;
+    transform: translateY(-50%);
+    background-color: #fff;
+    width: calc(100% - 35%);
+    margin: 0 5%;
+    border: 1px solid #2d2f7a;
+    border-radius: 5px;
+    height: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+#examQuestions {
+    padding: 40px;
+}
+
+#question {
+    font-size: 25px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+
+#answers {
+    width: 100%;
+}
+
+#answers input[type = "radio"] {
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+.answer {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.answer:hover {
+    box-shadow: 2px 2px 5px #ddd;  
+}
+
+#controls {
+    display: flex; 
+    justify-content: center;
+}
+
+#prevButton, #nextButton {
+    background-color: #3f42d9;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+}
+
+#questionNumber {
+    line-height: 2;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+#currentQuestion, #totalQuestions {
+    font-weight: bold;
+}
+
+#markButton {
+    display: relative;
+    position: absolute;
+    right: 45px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #ddd;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#submitButton {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2d2f7a;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+
